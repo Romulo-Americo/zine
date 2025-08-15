@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #470700, #76023A);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Font */
+h1, h2{
+    color: #FFFFFF;
+    font-family: "Joti One", serif;
+    font-size: 50px;
+}
+
+.logo{
+    width: 250px;
+}
