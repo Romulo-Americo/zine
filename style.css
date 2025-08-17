@@ -5,18 +5,52 @@ html, body {
 }
 
 body {
+    min-height: 100vh; /* garante pelo menos a altura da tela */
     background: linear-gradient(to bottom, #470700, #76023A);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed; /* opcional: mantém o fundo fixo ao rolar */
 }
 
-/* Font */
-h1, h2{
+/* Fontes */
+h1, h2 {
     color: #FFFFFF;
     font-family: "Joti One", serif;
     font-size: 50px;
 }
 
-.logo{
+p, span {
+    color: #FFFFFF;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+}
+
+a{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.logo {
     width: 250px;
+}
+
+/* Cards com hover */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1); /* aumenta 10% */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    z-index: 2;
+}
+
+/* Texto da seção Sobre Mim */
+section p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    text-align: justify;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
